@@ -49,6 +49,11 @@ rl.question("Pilih (1/2/3) : ", (pesan) => {
         console.log("-----------------------------");
         console.log("Pesanan berhasil di tambahkan");
         console.log("-----------------------------");
+        console.log();
+        console.log(`Opsi :`);
+        console.log(`1. Pesan`);
+        console.log(`2. Daftar pesanan saya`);
+        console.log(`3. Keluar`);
       } else {
         console.log("Data tidak ditemukan");
       }
