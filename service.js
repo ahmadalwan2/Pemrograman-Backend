@@ -54,6 +54,8 @@ rl.question("Pilih (1/2/3) : ", (pesan) => {
         console.log(`1. Pesan`);
         console.log(`2. Daftar pesanan saya`);
         console.log(`3. Keluar`);
+        rl.getPrompt("Pilih 1/2/3");
+        rl.setPrompt()
       } else {
         console.log("Data tidak ditemukan");
       }
