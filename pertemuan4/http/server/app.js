@@ -13,6 +13,7 @@ const server = http.createServer((req, res) => {
         // res.setHeader("Content-Type", "text/plain");
         // res.end("Ini data yang dikirimkan dari server, buat client");
 
+        // --- Ini simulasi menggunakkan kondisi if-else ---
         if (req.url ==="/data") {
             res.setHeader("Content-Type", "text/plain");
             res.write("Ini data yang dikirmkan dari server dan client");
