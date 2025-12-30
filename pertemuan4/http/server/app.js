@@ -9,7 +9,9 @@ const server = http.createServer((req, res) => {
         console.log(req.url);
 // - Ini untuk cek statusCode
         console.log(req.statusCode);
-        res.end();
+
+        res.setHeader("Content-Type", "text/plain");
+        res.end("Ini data yang dikirimkan dari server, untuk client");
 })
 
 server.listen(3000, () => {
