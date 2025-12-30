@@ -11,7 +11,7 @@ const server = http.createServer((req, res) => {
         console.log(req.statusCode);
 
         res.setHeader("Content-Type", "text/plain");
-        res.end("Ini data yang dikirimkan dari server, untuk client");
+        res.end("Ini data yang dikirimkan dari server, buat client");
 })
 
 server.listen(3000, () => {
