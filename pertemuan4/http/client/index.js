@@ -16,7 +16,13 @@ const request = http.request (
     // - JIka ada error ketika menampilkan data API
     res.on("error", (err) => {
         console.log(err.message);
-    })
+    });
+
+    /**
+     * Ini versi 2 dalam membaca data 
+     * Data yang didapatkan melalui event "data" itu sebenarnya masih belum bentuk laporan / chunk,
+     * Oleh karena itu perlu di gabungkan secara manual agar datanya  menjadi data yang utuh
+     */
     });
 
 /**
