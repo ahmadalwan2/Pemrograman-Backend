@@ -1,0 +1,7 @@
+1. Jika ditengah-tengah ngoding ada penambahan field baru maka wajib buat file migrasi khusus untuk menambahkan kolom tsbt dengan sintaks kurang lebih 
+
+2. Jangan lupa ubah fungsinya dibagian up jadi addColumn
+dan dibagian downnya ganti menjadi removeColumn
+
+3. Kalo sudah dijalankan migrasinya lagi dengan cara sbb:
+npx sequelize-cli db:generate
