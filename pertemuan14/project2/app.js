@@ -13,6 +13,8 @@ app.get("/", async (req, res) => {
     }
 });
 
+
+
 app.listen(PORT, () => {
     console.log(`Server sedang berjalan di port ${PORT}`);
 })
